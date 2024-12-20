@@ -1,0 +1,197 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url(../picture/bunga4.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-color: rgba(158, 138, 90, 0.458);
+    text-align: center;
+}
+
+h1 {
+    background-color: #fffedd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #6d3838;
+    margin: 30px 20px;
+    padding: 15px;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.header {
+    background-color: #9d656e;
+}
+
+nav.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    background-color: beige;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.button {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: floralwhite;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background-color: black;
+    color: floralwhite;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(-2px) scale(1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    margin: 10px auto;
+    background: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #cfe8f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .card-container {
+        padding: 10px;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .button {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+        margin: 15px 10px;
+        padding: 8px;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            font-size: 1em;
+            padding: 10px 5px;
+        }
+    
+        header h1 {
+            font-size: 1.2em;
+        }
+
+    .card {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact-image img {
+        max-width: 300px;
+    }
+
+    .contact-form-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    nav.menu {
+        flex-direction: column;
+        gap: 5px;
+        padding: 1px;
+    }
+}
+
+.button {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: floralwhite;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}

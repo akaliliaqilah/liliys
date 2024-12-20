@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url(../picture/bunga4.jpg);
+    background-size: 295px;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-color: rgba(221, 219, 215, 0.458);
+    text-align: center;
+}
+
+.container h1 {
+    background-color: #fffedd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #6d3838; 
+    margin: 20px;
+    padding: 15px;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    margin: 1rem;
+    background: #4b3832;
+    border-radius: 0.625rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #cfe8f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #473f3f;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.card p {
+    color: #f1f1f1;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1.8rem;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .card-container {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .icon img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .card h2 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact-image img {
+        max-width: 300px;
+    }
+
+    .contact-form-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    nav.menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    background-color: beige;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+nav.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 0;
+    background-color: beige;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: floralwhite;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background-color: black;
+    color: floralwhite;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(-2px) scale(1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
